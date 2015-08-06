@@ -1,0 +1,12 @@
+﻿    #shape {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        cursor: move;
+    }
+
+    #count {
+        font-size:60px;
+        color:lightgreen;
+        float:right;
+    }
