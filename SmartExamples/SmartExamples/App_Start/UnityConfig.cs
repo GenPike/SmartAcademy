@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using SmartExamples.Models;
 
 namespace SmartExamples.App_Start
 {
@@ -36,7 +37,7 @@ namespace SmartExamples.App_Start
             // container.LoadConfiguration();
 
             // TODO: Register your types here
-            // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<IRate, LowBankRate>();
         }
     }
 }
