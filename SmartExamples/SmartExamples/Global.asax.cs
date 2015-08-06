@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using SmartExamples.App_Start;
 
 namespace SmartExamples
 {
@@ -13,6 +14,7 @@ namespace SmartExamples
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            UnityConfig.RegisterTypes(UnityConfig.GetConfiguredContainer());
         }
     }
 }
